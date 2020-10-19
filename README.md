@@ -19,7 +19,8 @@ on:/etc/prometheus/target.json    prom/prometheus
 4. Service 정상 작동 확인 (ctrl+r, services.msc)
 5. Image Assistant 사용하여 Image 화
 6. AWS Credential 정보 설정
-7. 모니터링 서버에서 Prometheus 기동  ```docker run     -p 9090:9090     -v /root/prometheus.yml:/etc/prometheus/prometheus.yml -v /root/targets.json:/etc/prometheus/target.json    prom/prometheus```
+7. 모니터링 서버에서 Prometheus 기동  
+```docker run     -p 9090:9090     -v /root/prometheus.yml:/etc/prometheus/prometheus.yml -v /root/targets.json:/etc/prometheus/target.json    prom/prometheus```
 8. prom_to_csv.py (파일로 redirect 필요), make_report.py 수행
 
 ## 비고
